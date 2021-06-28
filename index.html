@@ -10,27 +10,73 @@
 <body>
     <div class="container p-3">
         <div class="row">
-          <div class="col">
+          <div class="col-md-4">
           </div>
-          <div class="col p-3">
-            <div class="card" style="width: 18rem;">
+          <div class="col-md-4 p-3">
+            <div class="card" >
                 <div class="card-body" id ="card">
-                  <center>
-                    <h5 class="card-title p-3" id="name"></h5>
-                  </center>  
-                  <p id="1"></p>
-                  <p id="2"></p>
-                  <p id="3"></p>
-                  <center>
-                    <button class="btn-primary btn btn-sm" onclick="weather()">Show Weather</button>
-                  </center>
+                  <div  class = "container-sm">
+                    <div class="row align-items-start p-2">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Tamilnadu</option>
+                          </select>
+                    </div>
+                    <div class="row align-items-center p-2">
+                        <select class="form-select" aria-label="Default select example" id="place"> 
+                            <option selected>select place</option>
+                            <option value="Coimbatore">Coimbatore</option>
+                            <option value="Singanallur">Singanallur</option>
+                            <option value="Peelamedu">Peelamedu</option>
+                            <option value="Karumattampatti">Karumattampatti</option>
+                            <option value="Annur">Annur</option>
+                            <option value="Mettupalayam">Mettupalayam</option>
+                            <option value="Somanur">Somanur</option>
+                            <option value="Dharmapuri">Dharmapuri</option>
+                            <option value="Erode">Erode</option>
+                            <option value="Chennimalai">Chennimalai</option>
+                            <option value="Puliyampatti">Puliyampatti</option>
+                            <option value="Gobichettipalyam">Gobichettipalyam</option>
+                            <option value="Nilgiris">Nilgiris</option>
+                            <option value="Ooty">Ooty</option>
+                            <option value="Kotagiri">Kotagiri</option>
+                            <option value="Coonoor">Coonoor</option>
+                            <option value="Salem">Salem</option>
+                            <option value="Tiruppur">Tiruppur</option>
+                            <option value="Perumanallur">Perumanallur</option>
+                            <option value="Uttukkuli">Uttukkuli</option>
+                            <option value="Avanashi">Avinashi</option>
+                            <option value="Pollachi">Udumalaipettai</option>
+                            <option value="Dharapuram">Dharapuram</option>
+                            <option value="Kangayam">Kangeyam</option>
+                          </select>
+                    </div>
+                    <div class="row align-items-end p-2">
+                            <button class="btn-primary btn btn-sm" onclick="weather()">Show Weather</button>
+                    </div>
+                  </div>
+                <div class="p-3">
+                    <div class="card ">
+                        <div class="card-body">
+                              <h5 class="card-title p-2" id="name"></h5>
+                              <p id="1"></p>
+                              <p id="2"></p>
+                              <p id="3"></p>
+                              <p class="card-text"><small class="text-muted " id="uptime" style="font-size: 10px;"></small></p>
+                              
+                        </div>
+                      </div>
+                     
+                </div>
+                  
                 </div>
               </div>
           </div>
-          <div class="col">
+          <div class="col-md-4">
           </div>
         </div>
-      </div>
+    </div>
 <script src="weather.js"></script>
 </body>
 </html>
+
+
