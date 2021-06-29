@@ -7,61 +7,45 @@
     <title>Tamilnadu Weather</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body>
-    <div class="container p-3">
+<body  style="background-color:rgb(185, 185, 185);" >
+  <h2 class="p-3 fw-bold"   style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Tamilnadu<p>weather forecast</p></h2>
+    <div class="container-sm p-3" >
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-sm-4">
           </div>
-          <div class="col-md-4 p-3">
-            <div class="card" >
+          <div class="col-sm-4 p-3"  >
+            <div class="card shadow-lg"  style="background-image: url('images/org_14875201911200747.jpg');" >
                 <div class="card-body" id ="card">
-                  <div  class = "container-sm">
-                    <div class="row align-items-start p-2">
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Tamilnadu</option>
-                          </select>
+                  <div  class = "container-sm" >
+                    <div class="row align-items-start p-2" >
+                      <select class="form-select border-0 text-white"  style="background-color: rgba(185, 182, 182, 0.294);" onchange="places()"  id="place"> 
+                        <option selected>select District</option>
+                        <option value="0">Chennai</option>
+                        <option value="1">Coimbatore</option>
+                        <option value="2">Erode</option>
+                        <option value="3">Selam</option>
+                        <option value="4">Tiruppur</option>
+                        <option value="5">Nilgiri</option>
+                        
+                      </select>
                     </div>
-                    <div class="row align-items-center p-2">
-                        <select class="form-select" aria-label="Default select example" id="place"> 
-                            <option selected>select place</option>
-                            <option value="Coimbatore">Coimbatore</option>
-                            <option value="Singanallur">Singanallur</option>
-                            <option value="Peelamedu">Peelamedu</option>
-                            <option value="Karumattampatti">Karumattampatti</option>
-                            <option value="Annur">Annur</option>
-                            <option value="Mettupalayam">Mettupalayam</option>
-                            <option value="Somanur">Somanur</option>
-                            <option value="Dharmapuri">Dharmapuri</option>
-                            <option value="Erode">Erode</option>
-                            <option value="Chennimalai">Chennimalai</option>
-                            <option value="Puliyampatti">Puliyampatti</option>
-                            <option value="Gobichettipalyam">Gobichettipalyam</option>
-                            <option value="Nilgiris">Nilgiris</option>
-                            <option value="Ooty">Ooty</option>
-                            <option value="Kotagiri">Kotagiri</option>
-                            <option value="Coonoor">Coonoor</option>
-                            <option value="Salem">Salem</option>
-                            <option value="Tiruppur">Tiruppur</option>
-                            <option value="Perumanallur">Perumanallur</option>
-                            <option value="Uttukkuli">Uttukkuli</option>
-                            <option value="Avanashi">Avinashi</option>
-                            <option value="Pollachi">Udumalaipettai</option>
-                            <option value="Dharapuram">Dharapuram</option>
-                            <option value="Kangayam">Kangeyam</option>
-                          </select>
+                    <div class="row align-items-center p-2" id='set'>
+                      <select class="form-select border-0 text-white"  style="background-color: rgba(185, 182, 182, 0.294);" id ="area" >
+                        
+                      </select>
                     </div>
                     <div class="row align-items-end p-2">
-                            <button class="btn-primary btn btn-sm" onclick="weather()">Show Weather</button>
+                            <button class="btn-light btn btn-sm"  style="background-color: rgba(185, 182, 182, 0.294);" onclick="weather()">Show Weather</button>
                     </div>
                   </div>
                 <div class="p-3">
-                    <div class="card ">
-                        <div class="card-body">
-                              <h5 class="card-title p-2" id="name"></h5>
+                    <div class="card "  style="background-color: rgba(126, 126, 126, 0.192);">
+                        <div class="card-body text-white">
+                              <h5 class="card-title" id="name"></h5>
                               <p id="1"></p>
                               <p id="2"></p>
                               <p id="3"></p>
-                              <p class="card-text"><small class="text-muted " id="uptime" style="font-size: 10px;"></small></p>
+                              <p class="card-text text-white"><small class="text " id="uptime" style="font-size: 10px;"></small></p>
                               
                         </div>
                       </div>
@@ -71,12 +55,12 @@
                 </div>
               </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-sm-4">
           </div>
         </div>
     </div>
-<script src="weather.js"></script>
+<script src="weather.js">
+</script>
 </body>
 </html>
-
 
