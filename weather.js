@@ -10,37 +10,26 @@ function places(){
     ]
     document.getElementById('area').remove();
     var select = document.createElement("select");
-    select.setAttribute('class','form-select border-0 text-white');
+    select.setAttribute('class','form');
     select.setAttribute('id','area');
-    select.setAttribute('style','background-color: rgba(185, 182, 182, 0.294);');
     document.getElementById('set').appendChild(select);
-
     var option1 = document.createElement("option");
         option1.setAttribute('id',"opt01")
         option1.setAttribute("selected","");
         document.getElementById("area").appendChild(option1);
         document.getElementById("opt01").innerHTML = "Select Area";
-
     for (i=0;i < areas[input].length; i++){
         var option = document.createElement("option");
         option.setAttribute('id',"opt"+i)
         option.setAttribute('value',areas[input][i]);
         document.getElementById("area").appendChild(option);
-        document.getElementById("opt"+i).innerHTML = areas[input][i];
-        console.log(i)
-
-       
+        document.getElementById("opt"+i).innerHTML = areas[input][i];   
     }
-    
-
 }
-
-
 function weather(){
     var place =  document.getElementById("area").value
     console.log(place)
     link='https://api.weatherapi.com/v1/current.json?key=7193a037355848eca6921203212806&q='+place
-    
     async function result(){
         var pr = await fetch(link)
         var results = await pr.json()
@@ -52,15 +41,11 @@ function weather(){
         var humidity = results.current.humidity
         var wind_kph = results.current.wind_kph
         var last_updated = results.current.last_updated
-    
         document.getElementById("name").innerHTML = city +","+region;
-        document.getElementById("1").innerHTML = "Temperature: "+temp_c+"°C  | " + temp_f + "°F " ;
+        document.getElementById("1").innerHTML = "Temperature :   "+temp_c+"°C  |   " + temp_f + "°F " ;
         document.getElementById("2").innerHTML = "Condition: "+condition;
-        document.getElementById("3").innerHTML = "Humidity : "+humidity +"%  | Wind : " + wind_kph +"kph" ;
-        document.getElementById("uptime").innerHTML = "last updated on "+last_updated;
-        console.log()
-        
-        
+        document.getElementById("3").innerHTML = "Humidity : "+humidity +"%     |     Wind : " + wind_kph +"kph" ;
+        document.getElementById("uptime").innerHTML = "last updated on "+last_updated;   
     }
     result()
 }
