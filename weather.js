@@ -11,6 +11,7 @@ function places(){
     document.getElementById('area').remove();
     var select = document.createElement("select");
     select.setAttribute('class','form');
+    select.setAttribute('style','width: 300px;height: 45px;margin-top: 20px;background-color: rgb(255, 255, 255);border-color: rgb(228, 228, 228);font-weight: bolder;font-size: 16px;transition-duration: 0.4s;border-radius: 6px;');
     select.setAttribute('id','area');
     document.getElementById('set').appendChild(select);
     var option1 = document.createElement("option");
