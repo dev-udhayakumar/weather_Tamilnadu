@@ -11,7 +11,7 @@ function places(){
     document.getElementById('area').remove();
     var select = document.createElement("select");
     select.setAttribute('class','form');
-    select.setAttribute('style','width: 300px;height: 45px;margin-top: 20px;background-color: rgb(255, 255, 255);border-color: rgb(228, 228, 228);font-weight: bolder;font-size: 16px;transition-duration: 0.4s;border-radius: 6px;');
+    select.setAttribute('style','width: 300px;height: 45px;margin-top: 5px;background-color: rgb(255, 255, 255);border-color: rgb(228, 228, 228);font-weight: bolder;font-size: 16px;transition-duration: 0.4s;border-radius: 6px;');
     select.setAttribute('id','area');
     document.getElementById('set').appendChild(select);
     var option1 = document.createElement("option");
@@ -42,7 +42,6 @@ function weather(){
         var humidity = results.current.humidity
         var wind_kph = results.current.wind_kph
         var last_updated = results.current.last_updated
-        document.getElementById("name").innerHTML = city +","+region;
         document.getElementById("1").innerHTML = "Temperature :   "+temp_c+"°C  |   " + temp_f + "°F " ;
         document.getElementById("2").innerHTML = "Condition: "+condition;
         document.getElementById("3").innerHTML = "Humidity : "+humidity +"%     |     Wind : " + wind_kph +"kph" ;

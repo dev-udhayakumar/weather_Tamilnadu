@@ -8,9 +8,9 @@
     <link rel="icon" href="images/storm.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="background-color: #ffb300;">
    <div class="card">
-      <img src="images/tn.jpg" class="logo">
+      <img src="images/storm.png" class="logo">
       <h3 class="heading">Tamilnadu Weather forecast</h3>
        <div class="cardbody" id ="card">
            <div class="row align-items-start p-2" >
@@ -25,16 +25,21 @@
                       </select>
              </div>
             <div class="row align-items-center p-2" id='set'>
-                      <select class="form" id ="area" ></select>
+                      <select class="form-1" id ="area" ></select>
               </div>
             <div class="row align-items-end p-2">
                       <button class="btn"   onclick="weather()">Show Weather</button>
               </div>
             <div class="result">
-                              <h5 class="name" id="name"></h5>
-                              <p id="1"></p>
-                              <p id="2"></p>
-                              <p id="3"></p>
+                              <p>
+                              <img src="images/temp.png" class="icons">
+                              <span id="1" class="anstex"></span></p>
+                                <p>
+                              <img src="images/condition.png" class="icons">
+                              <span id="2" class="anstex"></span></p>
+                              <p>
+                              <img src="images/wind.png"  class="icons">
+                              <span id="3" class="anstex"></span></p>
                               <p class="last" id="uptime"></p>    
               </div>
            </div>
