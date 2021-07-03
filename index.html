@@ -8,10 +8,41 @@
     <link rel="icon" href="images/storm.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: #ffb300;">
+<body>
+   <header>
+      <div class="mainani">
+         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets10.lottiefiles.com/temp/lf20_Stdaec.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"  loop  autoplay></lottie-player>
+      </div>
+      <div class="subani">
+         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player  src="https://assets4.lottiefiles.com/packages/lf20_KUFdS6.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"  loop  autoplay></lottie-player>
+      </div>
+      <div class="subani1">
+         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player  src="https://assets4.lottiefiles.com/packages/lf20_KUFdS6.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"  loop  autoplay></lottie-player>
+      </div>
+      <div class="subani2">
+         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player  src="https://assets4.lottiefiles.com/packages/lf20_KUFdS6.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"  loop  autoplay></lottie-player>
+      </div>
+      
+
+   </header>
    <div class="card">
-      <img src="images/storm.png" class="logo">
-      <h3 class="heading">Tamilnadu Weather forecast</h3>
+      <div>
+         
+         <div class="result">
+            <img src="images/ttn.jpeg" id ="img-tn" class="logo" >  
+            <p>
+            <span id="1" class="anstex"></span></p>
+              <p>
+            <span id="2" class="anstex"></span></p>
+            <p>
+            <span id="3" class="anstex"></span></p>  
+</div>
+      </div>
+
        <div class="cardbody" id ="card">
            <div class="row align-items-start p-2" >
                       <select class="form "   onchange="places()"  id="place"> 
@@ -29,18 +60,6 @@
               </div>
             <div class="row align-items-end p-2">
                       <button class="btn"   onclick="weather()">Show Weather</button>
-              </div>
-            <div class="result">
-                              <p>
-                              <img src="images/temp.png" class="icons">
-                              <span id="1" class="anstex"></span></p>
-                                <p>
-                              <img src="images/condition.png" class="icons">
-                              <span id="2" class="anstex"></span></p>
-                              <p>
-                              <img src="images/wind.png"  class="icons">
-                              <span id="3" class="anstex"></span></p>
-                              <p class="last" id="uptime"></p>    
               </div>
            </div>
         </div>      

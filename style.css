@@ -1,8 +1,10 @@
 .btn{
     background-color: #ffb300;
-    width: 300px;
+    width: 100%;
     height: 45px;
     border: #fdd835 ;
+    margin-bottom: 10px;
+    margin-top: 20px;
     border-radius: 6px;
     font-weight: bold;
     font-size: 16px;
@@ -15,7 +17,7 @@
     box-shadow: 0 2px 4px 0 rgba(73, 73, 73, 0.2), 0 2px 15px 0 rgba(80, 80, 80, 0.19);
 }
 .form{
-    width: 300px;
+    width: 100%;
     height: 45px;
     margin-top: 20px;
     background-color: rgb(255, 255, 255);
@@ -26,9 +28,9 @@
     border-radius: 6px;
 }
 .form-1{
-    width: 300px;
+    width: 100%;
     height: 45px;
-    margin-top: 10px;
+    margin-top:20px ;
     background-color: rgb(255, 255, 255);
     border-color: rgb(228, 228, 228);
     font-weight: bolder;
@@ -37,29 +39,28 @@
     border-radius: 6px;
 }
 .form:hover{
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2) ;
+    box-shadow: 0 2px 4px 0 rgba(73, 73, 73, 0.2), 0 2px 15px 0 rgba(80, 80, 80, 0.19);
+
 }
 .card{
-    position: relative;
-    width: 350px;
-    height: 470px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 90px;
-    margin-bottom: auto;
-    text-align: center;
-    box-sizing: content-box;
+    margin: auto;
+    width: 370px;
+    margin: auto;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin-bottom: 10px;
     border-style: hidden;
     border-radius: 20px 20px 20px 20px;
     background-color:#ffb300 ;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0),0 2px 15px 0 rgba(80, 80, 80, 0.19) ;
      
 }
 .cardbody{
-    width: 350px;
-    height: auto;
-    position: absolute;
-    top: 90px;
-    bottom: 0px;
+    margin: auto;
+    margin-top: 110px;
+    bottom: 0;
     background-color: white;
     border-style: hidden;
     border-radius: 20px 20px 20px 20px;
@@ -71,18 +72,18 @@
 .heading{
     position: absolute;
     margin-top: 3px;
-    margin-left: 20px;
+    margin: 8px ;
     font-weight: bolder;
     font-size: 18px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .logo{
-    position: relative;
-    height: 50px;
-    width: 50px;
-    margin-top: 3px;
+    
+    height: 70px;
+    width: 150px;
+    margin-top: 18px;
     border-style: hidden;
-    border-radius: 10px;
+    border-radius: 6px;
 }
 .result{
     position: absolute;
@@ -105,4 +106,53 @@
 .anxtex{
     position: absolute;
     text-align: start;
+}
+.subani{
+    position: fixed;
+    top: 20px;
+    animation-name: cloud;
+    animation-duration: 46s;
+    animation-iteration-count: infinite;
+
+}
+.subani1{
+    position: fixed;
+    left: 80px;
+    top:40px;
+    animation-name: cloud1;
+    animation-duration: 70s;
+    animation-iteration-count: infinite;
+
+}
+.subani2{
+    position: fixed;
+    right: 10px;
+    top:40px;
+    animation-name: cloud2;
+    animation-duration: 70s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes cloud{
+    0% {left:0px;}
+    50% {left:60%;}
+    100% {left:0px}
+}
+@keyframes cloud1{
+    0% {left:120px;}
+    50% {left:90%;}
+    100% {left:120px}
+}
+@keyframes cloud2{
+    0% {righ:0%;}
+    50% {right:90%;}
+    100% {right:0%}
+}
+
+
+@media(max-width:370px){
+    .card{
+        width: 100%;
+    }
 }
