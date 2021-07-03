@@ -42,7 +42,6 @@ function weather(){
         var humidity = results.current.humidity
         var wind_kph = results.current.wind_kph
         var last_updated = results.current.last_updated
-        document.getElementById("img-tn").style.display= "none";
         document.getElementById("1").innerHTML = "Temperature :   "+temp_c+"°C  |   " + temp_f + "°F " ;
         document.getElementById("2").innerHTML = "Condition: "+condition;
         document.getElementById("3").innerHTML = "Humidity : "+humidity +"%     |     Wind : " + wind_kph +"kph" ;
