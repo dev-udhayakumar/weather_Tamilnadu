@@ -3,26 +3,23 @@
     box-sizing: border-box;
   }
 .result{
-    width: 100%;
+    width: 70%;
     margin-top: 25px;
 }
 .tempdiv{
     float: left;
     width: 40%;
-    margin: auto;
     margin-top: 25px;
 }
 .condiv{
     float: left;
     width: 30%;
-    margin: auto;
     margin-top: 25px;
 
 }
 .winddiv{
     float: left;
     width: 30%;
-    margin: auto;
     margin-top: 25px;
 }
 .btn{
@@ -124,6 +121,9 @@
     position: absolute;
     text-align: start;
 }
+.start{
+    width: 100%;
+}
 .subani{
     position: fixed;
     top: 20px;
@@ -134,7 +134,7 @@
 }
 .subani1{
     position: fixed;
-    left: 80px;
+    left: 0px;
     top:40px;
     animation-name: cloud1;
     animation-duration: 70s;
@@ -143,7 +143,7 @@
 }
 .subani2{
     position: fixed;
-    right: 10px;
+    right: 0px;
     top:40px;
     animation-name: cloud2;
     animation-duration: 70s;
@@ -157,9 +157,9 @@
     100% {left:0px}
 }
 @keyframes cloud1{
-    0% {left:120px;}
+    0% {left:10px;}
     50% {left:90%;}
-    100% {left:120px}
+    100% {left:10px}
 }
 @keyframes cloud2{
     0% {righ:0%;}
@@ -168,11 +168,11 @@
 }
 @media(max-width:370px){
     .card{
-        width: 100%;
+        width: 90%;
     }
 }
 @media(max-width:450px){
     .tempdiv,.winddiv,.condiv{
-        width: 100%;
+        width: 90%;
     }
 }
